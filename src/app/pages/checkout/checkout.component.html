@@ -1,0 +1,91 @@
+<div class="pointer-events-auto">
+  <div class="grid grid-cols-12 gap-4 bg-white min-h-[70vh]">
+    <div class="flex-1 px-4 py-6 sm:px-6 col-span-7">
+      <div class="flex items-start justify-between">
+        <h2 class="text-3xl font-semibold text-gray-900" id="slide-over-title">Shopping cart</h2>
+        <div class="ml-3 flex h-7 items-center">
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <div class="flow-root">
+          <ul role="list" class="my-3 divide-gray-200" *ngFor="let product of products">
+            <li class="flex py-10 border-t">
+              <div class="h-48 w-48 flex-shrink-0 overflow-hidden rounded-md border-gray-200">
+                <img
+                  src="{{product.image}}"
+                  alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt."
+                  class="h-full w-full object-contain object-center"
+                />
+              </div>
+
+              <div class="ml-4 flex flex-1 flex-col">
+                <div>
+                  <div class="flex justify-between text-base font-medium text-gray-900">
+                    <h3>
+                      <a href="#">{{product.name}}</a>
+                    </h3>
+                    <p class="ml-4">${{product.price}}.00</p>
+                  </div>
+                  <p class="mt-1 text-sm text-gray-500">${{product.detail}}</p>
+                </div>
+                <div class="flex flex-1 items-end justify-between text-sm">
+                  <p class="text-gray-500">Quantity : 1</p>
+
+                  <div class="flex">
+                    <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500" (click)="selectProductRemove(product)">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- More products... -->
+          </ul>
+          <app-card-empty *ngIf="!products.length"></app-card-empty>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-gray-200 px-4 pt-24 sm:px-6 col-span-5">
+      <h2 class="text-xl font-medium mb-5">Order summary</h2>
+      <div class="flex justify-between text-base font-medium text-gray-900 mb-3">
+        <p>Fee</p>
+        <p>${{fee}}.00</p>
+      </div>
+      <div class="flex justify-between text-base font-medium text-gray-900 mb-3">
+        <p>Fee ship</p>
+        <p>${{feeShip}}.00</p>
+      </div>
+
+      <div class="flex justify-between text-base font-medium text-gray-900 mb-3">
+        <p>Voucher</p>
+        <p class="mt-1 text-sm text-gray-500" *ngIf="isVoucher; else noneVoucher">Flash freeship</p>
+        <ng-template #noneVoucher>
+          <p class="mt-1 text-sm text-gray-500" >None</p>
+        </ng-template>
+      </div>
+      <div class="flex justify-between text-base font-medium text-gray-900 mt-8 mb-3 ">
+        <p>Subtotal</p>
+        <p>${{subtotal}}.00</p>
+      </div>
+      <p class="mt-1 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+      <div class="mt-8">
+        <button
+          (click)="onCheckout()"
+          class="flex items-center justify-center w-full rounded-3xl border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >Checkout</button
+        >
+      </div>
+      <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
+        <p>
+          or
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+            Continue Shopping
+            <span aria-hidden="true"> &rarr;</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <app-dialog-sm [title]="titleDialogConfirm" [content]="contentDialogConfirm" [openDialog]="open" [product]="productRemove" (handleConfirmEvent)="removeProduct(productRemove)"></app-dialog-sm>
+  <app-dialog-sm [title]="titleDialogCheckoutConfirm" [content]="contentDialogCheckoutConfirm" [openDialog]="openDialogCheckout" (handleConfirmEvent)="handleCheckout()"></app-dialog-sm>
+</div>

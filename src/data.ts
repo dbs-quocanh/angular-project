@@ -1,0 +1,178 @@
+export const phones = [
+  {
+    id: 1,
+    name: 'Iphone 12',
+    detail: 'Iphone 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-tim-1-600x600.jpg',
+  },
+  {
+    id: 2,
+    name: 'Iphone 13',
+    detail: 'Iphone 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-pink-2-600x600.jpg',
+  },
+  {
+    id: 3,
+    name: 'Iphone 14',
+    detail: 'Iphone 14 very beatiful',
+    price: 40000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/240259/iPhone-14-thumb-tim-1-600x600.jpg',
+  },
+  {
+    id: 4,
+    name: 'Iphone 15',
+    detail: 'Iphone 15 very beatiful',
+    price: 50000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg',
+  },
+  {
+    id: 5,
+    name: 'Iphone 12',
+    detail: 'Iphone 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-tim-1-600x600.jpg',
+  },
+  {
+    id: 6,
+    name: 'Iphone 13',
+    detail: 'Iphone 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-pink-2-600x600.jpg',
+  },
+  {
+    id: 7,
+    name: 'Iphone 12',
+    detail: 'Iphone 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-tim-1-600x600.jpg',
+  },
+  {
+    id: 8,
+    name: 'Iphone 13',
+    detail: 'Iphone 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-pink-2-600x600.jpg',
+  },
+];
+
+
+export const laptops = [
+  {
+    id: 9,
+    name: 'Laptop 12',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 10,
+    name: 'Laptop 13',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 11,
+    name: 'Laptop 14',
+    detail: 'Laptop 14 very beatiful',
+    price: 40000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 12,
+    name: 'Laptop 15',
+    detail: 'Laptop 15 very beatiful',
+    price: 50000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 13,
+    name: 'Laptop 12',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 14,
+    name: 'Laptop 13',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 15,
+    name: 'Laptop 12',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+  {
+    id: 16,
+    name: 'Laptop 13',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gray-600x600.jpg',
+  },
+];
+
+export const clothes = [
+  {
+    id: 17,
+    name: 'Black',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+  },
+  {
+    id: 18,
+    name: 'Aspen White',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
+  },
+  {
+    id: 19,
+    name: 'Charcoal',
+    detail: 'Laptop 14 very beatiful',
+    price: 40000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
+  },
+  {
+    id: 20,
+    name: 'Iso Dots',
+    detail: 'Laptop 15 very beatiful',
+    price: 50000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg',
+  },
+  {
+    id: 21,
+    name: 'Black',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+  },
+  {
+    id: 22,
+    name: 'Aspen White',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
+  },
+  {
+    id: 23,
+    name: 'Charcoal',
+    detail: 'Laptop 12 very beatiful',
+    price: 200000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
+  },
+  {
+    id: 24,
+    name: 'Iso Dots',
+    detail: 'Laptop 13 very beatiful',
+    price: 300000,
+    image: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg',
+  },
+];
+
